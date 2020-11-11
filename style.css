@@ -254,6 +254,14 @@ h4 {
     justify-content: center;
     height: 60%;
   }
+
+  .review_img img {
+    width: 297px;
+  }
+
+  .review_img_rev img {
+    width: 297px;
+  }
 }
 
 /* 1024 x 786 -> ipad */
