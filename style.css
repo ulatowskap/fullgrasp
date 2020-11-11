@@ -1,0 +1,491 @@
+/*variables*/
+
+:root {
+  --section-background: #1d182b;
+  --font-color: white;
+  --button-color: #ce335d;
+}
+
+/*czcionki - ustawienia */
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("Fonts/Proxima\ Nova\ Bold.otf");
+}
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("Fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+  font-family: "Proxima Nova Italics";
+  src: url("Fonts/Proxima\ Nova\ ScOsf\ Regular\ Italic.otf");
+}
+
+p {
+  font-family: "Proxima Nova Regular";
+  color: var(--font-color);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h4,
+a,
+.submit {
+  font-family: "Proxima Nova Bold";
+  color: var(--font-color);
+}
+
+/*reset strony*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*particles*/
+
+.background {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -500;
+}
+
+/*background*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: url("img/background2.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*rotate mobile*/
+
+#rotate-device {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: none;
+}
+
+#rotate-device img {
+  width: 200px;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+@media only screen and (max-device-width: 812px) and (min-device-width: 320px) and (orientation: landscape) {
+  #rotate-device {
+    display: block;
+  }
+}
+
+/*mobile first -> 360 x 640*/
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 75px;
+  width: 150px;
+  padding-left: 20px;
+  padding-top: 20px;
+  position: absolute;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  padding: 0 24px;
+}
+
+.header_p {
+  text-align: center;
+  margin: 24px;
+  font-size: 18px;
+}
+
+a,
+.submit {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border: none;
+  color: white;
+}
+
+.movie {
+  width: 80%;
+  margin: 16px auto;
+}
+
+.movie img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 96px;
+}
+
+.adv-sec {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  margin: 32px;
+}
+
+.tile {
+  background-color: var(--section-background);
+  padding: 24px;
+  width: 80%;
+  margin: 32px auto 0;
+}
+
+.tile_img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.tile_img img {
+  width: 80px;
+}
+
+.tile h4 {
+  text-align: center;
+  margin: 24px auto;
+  font-size: 24px;
+}
+
+.tile p {
+  text-align: center;
+}
+
+.mail {
+  margin: 32px auto 0;
+  background-color: var(--section-background);
+  width: 80%;
+  height: auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.mail span {
+  font-size: 18px;
+}
+
+input,
+.input {
+  margin-top: 24px;
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+}
+
+.input {
+  font-size: 16px;
+}
+
+.reviews {
+  display: block;
+  width: 80%;
+  margin: 32px auto 0;
+}
+
+.review,
+.review-rev {
+  background-color: var(--section-background);
+  margin: 32px auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.review_img img {
+  width: 100%;
+}
+
+.review_img_rev img {
+  width: 100%;
+}
+
+h4 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+
+.name {
+  font-family: "Proxima Nova Bold";
+  margin-top: 24px;
+}
+
+/* 768x1024*/
+
+@media (min-width: 767px) {
+  header {
+    justify-content: center;
+    height: 60%;
+  }
+}
+
+/* 1024 x 786 -> ipad */
+
+@media (min-width: 1023px) {
+  header {
+    justify-content: flex-start;
+    height: 80%;
+  }
+
+  .logo img {
+    height: 90px;
+    width: 200px;
+  }
+
+  h1 {
+    margin-top: 160px;
+  }
+
+  .movie {
+    width: 60%;
+  }
+
+  .tile {
+    width: 60%;
+  }
+
+  .mail {
+    width: 60%;
+  }
+
+  input,
+  .input {
+    width: 60%;
+  }
+
+  .reviews {
+    width: 60%;
+  }
+}
+
+/*1024 x 1366*/
+
+@media (min-width: 1023px) and (min-height: 1365px) {
+  header {
+    justify-content: flex-end;
+    height: 70%;
+  }
+
+  a {
+    width: 400px;
+    margin: 60px auto;
+    padding: 20px 20px;
+    font-size: 24px;
+  }
+  .submit {
+    width: 400px;
+    padding: 20px 20px;
+    font-size: 24px;
+  }
+
+  .logo img {
+    height: 150px;
+    width: 350px;
+  }
+
+  h1 {
+    margin-top: 160px;
+    font-size: 72px;
+  }
+
+  .header_p {
+    font-size: 32px;
+  }
+
+  .movie {
+    width: 80%;
+    margin: 128px auto;
+  }
+
+  .tile {
+    width: 80%;
+    padding: 48px;
+  }
+
+  .mail {
+    width: 80%;
+    padding: 48px;
+  }
+
+  .input {
+    width: 70%;
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  .reviews {
+    width: 80%;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .mail_p {
+    font-size: 32px;
+  }
+
+  .mail span {
+    font-size: 36px;
+  }
+
+  .tile h4 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  .review,
+  .review-rev {
+    padding: 48px;
+  }
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1365px) {
+  .background {
+    display: block;
+  }
+
+  header {
+    justify-content: center;
+    height: 80%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .header_p {
+    text-align: center;
+    margin: 24px;
+    font-size: 18px;
+  }
+
+  .movie {
+    width: 50%;
+    margin: 32px auto;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-top: 192px;
+  }
+
+  .adv_sec {
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .tile {
+    width: 50%;
+    padding: 48px;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .mail {
+    width: 50%;
+    padding: 48px;
+    text-align: center;
+  }
+
+  .mail span {
+    font-size: 18px;
+  }
+
+  input,
+  .input {
+    margin-top: 24px;
+    text-align: center;
+    padding: 8px;
+    width: 70%;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 32px auto 0;
+  }
+
+  .review {
+    display: flex;
+    padding: 40px;
+    text-align: right;
+  }
+
+  .review-rev {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px;
+    text-align: left;
+  }
+
+  .review_img img {
+    width: 100%;
+    width: 297px;
+  }
+
+  .review_p {
+    padding: 0 0 0 100px;
+  }
+
+  .review_p_rev {
+    padding: 0 100px 0 0px;
+  }
+
+  .review_img_rev img {
+    width: 100%;
+    width: 297px;
+  }
+}

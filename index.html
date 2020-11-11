@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Full Grasp</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logout.png" alt="" />
+      </div>
+    <header>
+     
+        <h1>Czytaj to, co cały świat <br />i rozwijaj język angielski</h1>
+        <p class="header_p">
+          Wybierz artykuł i zacznij czytać to, co Cię interesuje, <br />
+          a my sprawimy, że intuicyjnie i szybko zrozumiesz nawet najtrudniejsze
+          słowa.
+        </p>
+        <a href="#mail">14 dni za darmo</a>
+      </header>
+
+      <div class="movie"><img src="Vid/video.gif"/></div>
+
+      <h2>Zapomnij o barierze językowej</h2>
+      <section class="adv_sec">
+        <div class="tile">
+          <div class="tile_img"><img src="img/thinkingw.png" alt="" /></div>
+          <h4>100% <br />zrozumienia</h4>
+          <p>
+            Czytaj z łatwością nawet najtrudniejsze artykuły w języku angielskim.
+            Bez sięgania do słownika i odrywania się od tekstu.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="tile_img"><img src="img/directionsw.png" alt="" /></div>
+          <h4>
+            Wolność <br />
+            wyboru
+          </h4>
+          <p>
+            Sam decyduj, co czytasz i bądź na bieżąco z tym, co dzieje się na
+            świecie, jednocześnie ucząc się języka.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="tile_img"><img src="img/newspaperw.png" alt="" /></div>
+          <h4>Aktualne <br />i ważne tematy</h4>
+          <p>
+            Rozwijaj język w oparciu o kilkaset artykułów z najbardziej
+            opiniotwórczych portali na świecie.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="tile_img"><img src="img/checklistsw.png" alt="" /></div>
+          <h4>
+            Ćwiczenia<br />
+            kontekstowe
+          </h4>
+          <p>
+            Skutecznie zapamiętuj słownictwo dzięki indywidualnej bazie słów i
+            ćwiczeniom opartym o przeczytane artykuły.
+          </p>
+        </div>
+      </section>
+  
+
+      <h2>Dołącz do nas <span id="mail"></span></h2>
+      <section class="mail">
+        <p class="mail_p">
+          Chcesz efektywnie uczyć się języka angielskiego, czytając artykuły z
+          <span>najbardziej prestiżowych i opiniotwórczych</span>
+          anglojęzycznych portali? Chcesz czerpać wiedzę o świecie z
+          <span>wiarygodnych</span> źródeł? Jeśli tak, zarejestruj się już dziś.
+          <br /><br />
+          W dniu oficjalnej premiery otrzymasz
+          <span>darmowy 14-dniowy</span> dostęp do platformy.
+        </p>
+  
+        <form>
+        <input 
+        class="input"
+        required
+          type="mail"
+          value="wpisz swój e-mail"
+          onfocus="this.value = this.value=='wpisz swój e-mail'?'':this.value;"
+          onblur="this.value = this.value==''?'wpisz swój e-mail':this.value;"
+        />
+        <input class="submit" type="submit" value="Zacznij rozumieć">
+    </form>
+      </section>
+  
+      <h2>Opinie o FullGrasp</h2>
+  
+      <section class="reviews">
+        <div class="review">
+          <div class="review_img"><img src="img/Artur.jpg" alt="" /></div>
+          <div class="text_review">
+            <h4>Lepszy niż Kindle...</h4>
+            <p class="review_p">
+              Chciałbym, żeby mój Kindle miał taką opcję. Nawet, gdy nie byłem
+              pewien znaczenia jednego z sugerowanych słów np. synonimu, to
+              antonim w połączeniu z kontekstem pozwalał mi na płynne czytanie.
+            </p>
+            <p class="name">Artur</p>
+            <p class="occ">Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="review-rev">
+          <div class="review_img_rev"><img src="img/Agata.jpg" alt="" /></div>
+          <div class="text_review text_review_left">
+            <h4>Poczułam się jak native</h4>
+            <p class="review_p_rev">
+              Czytam dużo literatury fachowej i do tej pory język był poważnym
+              ograniczeniem. Z FullGrasp mogę czytać płynnie i bezproblemowo.
+              Fantastyczny pomysł!
+            </p>
+            <p class="name">Agata</p>
+            <p class="occ">HR Business Partner</p>
+          </div>
+        </div>
+  
+        <div class="review">
+          <div class="review_img"><img src="img/Daniel.jpg" alt="" /></div>
+          <div class="text_review">
+            <h4>Rozumiem więcej</h4>
+            <p class="review_p">
+              Słownictwo w artykule było na bardzo wysokim poziomie i normalnie
+              nie podjąłbym się czytania takiej treści, bo musiałbym spędzić
+              większość czasu używając słownika. Jednak z FullGrasp zrozumiałem
+              wszystko.
+            </p>
+            <p class="name">Daniel</p>
+            <p class="occ">Community Manager</p>
+          </div>
+        </div>
+      </section>
+  
+      <div id="rotate-device">
+        <img class="rotate" src="img/screen-rotation-button.png" alt="">
+  </div>
+  
+  <canvas class="background"></canvas>
+  <canvas class="background"></canvas>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> 
+ <script>
+   window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    connectParticles: 'true',
+    color: ['#58419e', '#404B69', '#DBEDF3'],
+    speed: '1',
+    minDistance: '50',
+    maxParticles: '60',
+
+    responsive: [
+    {
+      breakpoint: 1920,
+      options: {
+        maxParticles: 120,
+      }
+    }, {
+      breakpoint: 2560,
+      options: {
+        maxParticles: 180,
+      }
+    }
+  ]
+  });
+};
+
+
+</script>
+</body>
+</html>
