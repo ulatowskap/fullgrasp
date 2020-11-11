@@ -264,6 +264,14 @@ h4 {
     height: 80%;
   }
 
+  .review_img img {
+    width: 297px;
+  }
+
+  .review_img_rev img {
+    width: 297px;
+  }
+
   .logo img {
     height: 90px;
     width: 200px;
@@ -461,27 +469,27 @@ h4 {
   .review {
     display: flex;
     padding: 40px;
-    text-align: right;
+    text-align: left;
   }
 
   .review-rev {
     display: flex;
     flex-direction: row-reverse;
     padding: 40px;
-    text-align: left;
+    text-align: right;
+  }
+
+  .text_review_left {
+    padding: 0 50px 0 0;
+  }
+
+  .text_review_right {
+    padding: 0 0px 0 50px;
   }
 
   .review_img img {
     width: 100%;
     width: 297px;
-  }
-
-  .review_p {
-    padding: 0 0 0 100px;
-  }
-
-  .review_p_rev {
-    padding: 0 100px 0 0px;
   }
 
   .review_img_rev img {
