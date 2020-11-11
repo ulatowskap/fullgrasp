@@ -31,7 +31,8 @@ h1,
 h2,
 h4,
 a,
-.submit {
+.submit,
+span {
   font-family: "Proxima Nova Bold";
   color: var(--font-color);
 }
