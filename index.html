@@ -5,25 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Full Grasp</title>
-    <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/3595/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
+    
 </head>
 <body>
     <div class="logo">
@@ -108,7 +90,7 @@
           onblur="this.value = this.value==''?'wpisz swój e-mail':this.value;"
         />
     </form>
-    <input class="submit" type="submit" onclick="SubForm()" value="Zacznij rozumieć">
+    <input class="submit" type="submit" value="Zacznij rozumieć">
       </section>
   
       <h2>Opinie o FullGrasp</h2>
