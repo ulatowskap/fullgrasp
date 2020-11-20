@@ -67,6 +67,16 @@ body {
   height: 100vh;
 }
 
+.bgc-gray {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: none;
+  opacity: 0.8;
+  z-index: 10;
+}
+
 /*mobile first -> 360 x 640*/
 
 header {
@@ -225,6 +235,57 @@ h4 {
 
 /* 768x1024*/
 
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #402494;
+}
+
+.popuptext {
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+  font-size: 18px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.img-popup {
+  display: none;
+  width: 400px;
+  position: absolute;
+  top: -25%;
+  left: calc(50% - 200px);
+}
+
+.span-popup {
+  font-size: 26px;
+}
+
+.span-big {
+  font-size: 20px;
+}
+
 @media (min-width: 767px) {
   header {
     justify-content: center;
@@ -237,6 +298,57 @@ h4 {
 
   .review_img_rev img {
     width: 297px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 400px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #402494;
+  }
+
+  .popuptext {
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    font-size: 18px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .img-popup {
+    display: block;
+    width: 400px;
+    position: absolute;
+    top: -25%;
+    left: calc(50% - 200px);
+  }
+
+  .span-popup {
+    font-size: 26px;
+  }
+
+  .span-big {
+    font-size: 20px;
   }
 }
 
@@ -374,6 +486,57 @@ h4 {
   .review-rev {
     padding: 48px;
   }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #402494;
+  }
+
+  .popuptext {
+    text-align: center;
+    padding: 120px 20px 0px 20px;
+    font-size: 30px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .img-popup {
+    display: block;
+    width: 530px;
+    position: absolute;
+    top: -25%;
+    left: calc(50% - 265px);
+  }
+
+  .span-popup {
+    font-size: 36px;
+  }
+
+  .span-big {
+    font-size: 34px;
+  }
 }
 
 /*DESKTOP*/
@@ -479,5 +642,56 @@ h4 {
   .review_img_rev img {
     width: 100%;
     width: 297px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 400px;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #402494;
+  }
+
+  .popuptext {
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    font-size: 18px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .img-popup {
+    display: block;
+    width: 400px;
+    position: absolute;
+    top: -25%;
+    left: calc(50% - 200px);
+  }
+
+  .span-popup {
+    font-size: 26px;
+  }
+
+  .span-big {
+    font-size: 20px;
   }
 }
