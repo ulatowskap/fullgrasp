@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Full Grasp</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
 </head>
 <body>
   <div class="bgc-gray"></div>
@@ -86,14 +84,14 @@
         <input 
         type="email"
         id="email"
-        required
         class="input"
         name="name"
           value="wpisz swój e-mail"
           onfocus="this.value = this.value=='wpisz swój e-mail'?'':this.value;"
           onblur="this.value = this.value==''?'wpisz swój e-mail':this.value;"
+          required
         />
-        <input class="submit" id="button" type="button" value="Zacznij rozumieć">
+        <input class="submit" id="button" type="submit" value="Zacznij rozumieć">
     </form>
 </section>
 
@@ -159,63 +157,9 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
- <script>
-   window.onload = function() {
-  Particles.init({
-    selector: '.background',
-    connectParticles: 'true',
-    color: ['#58419e', '#404B69', '#DBEDF3'],
-    speed: '1',
-    minDistance: '50',
-    maxParticles: '60',
-
-    responsive: [
-    {
-      breakpoint: 1920,
-      options: {
-        maxParticles: 120,
-      }
-    }, {
-      breakpoint: 2560,
-      options: {
-        maxParticles: 180,
-      }
-    }
-  ]
-  });
-};
-
-var meta = document.createElement('meta');
-meta.name = 'viewport';
-meta.content = 'width=device-width,height='+window.innerHeight+', initial-scale=1.0';
-document.getElementsByTagName('head')[0].appendChild(meta);
-
-$( document ).ready(function() {
-  $("#button").click(function(e) {
-  var email = $("#email").val(); 
-  var dataString = 'name=' + email;
-  $.ajax({
-    type: 'POST',
-    data: dataString,
-    url: '/email.php',
-    success:function() {
-      $(".popup").css("display", "flex");
- $(".bgc-gray").css("display", "block");
-    }
-  });
-
-});
-
-$(".close").click(function(){
-  $(".popup").hide();
-  $(".bgc-gray").css("display", "none");
-})
-
-});
-
-
-</script>
+<script src="code.js"></script>
 
 </body>
 </html>
