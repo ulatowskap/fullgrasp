@@ -21,7 +21,8 @@
   src: url("Fonts/Proxima\ Nova\ ScOsf\ Regular\ Italic.otf");
 }
 
-p {
+p,
+li {
   font-family: "Proxima Nova Regular";
   color: var(--font-color);
   font-size: 16px;
@@ -37,11 +38,57 @@ span {
   color: var(--font-color);
 }
 
+li {
+  padding: 2px;
+  text-align: left;
+}
+
+.nested {
+  padding-left: 30px;
+}
+
 /*reset strony*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*polityka prywatności */
+
+.private-link {
+  display: inline;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.private-text {
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.p-private {
+  text-align: left;
+}
+
+.home-link {
+  font-size: 14px;
+  position: relative;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-main {
+  margin: 32px auto 0;
+  background-color: var(--section-background);
+  width: 80%;
+  height: auto;
+  padding: 50px 30px;
+  text-align: center;
 }
 
 /*particles*/
@@ -553,6 +600,23 @@ h4 {
 
   h1 {
     font-size: 48px;
+  }
+
+  .section-main {
+    margin: 32px auto 0;
+    background-color: var(--section-background);
+    width: 60%;
+    height: auto;
+    padding: 50px 100px;
+    text-align: center;
+  }
+  .home-link {
+    font-size: 14px;
+    display: block;
+    position: fixed;
+    text-align: right;
+    right: 20px;
+    top: 0;
   }
 
   .header_p {
